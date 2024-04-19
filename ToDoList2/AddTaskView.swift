@@ -55,7 +55,7 @@ struct AddTaskView: View {
             newItem.isDone = false
             newItem.name = taskname.isEmpty ? "Unnamed Task" : taskname // Fallback if name is empty
             newItem.details = taskDetails
-            
+            newItem.createddate = Date()
             do {
                 try viewContext.save()
             } catch {
