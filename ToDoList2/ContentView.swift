@@ -128,6 +128,11 @@ struct ContentView: View {
                             
                         }
                         Button(action: {
+                            sortOption = .new
+                        }){Label("Sort by created Date",systemImage:"calendar.badge.clock")
+                            
+                        }
+                        Button(action: {
                             sortOption = .completion
                         }){Label("Sort by Completion",systemImage:"checkmark.circle")
                             
@@ -168,15 +173,19 @@ struct ContentView: View {
     private func sortedTasks() -> [TaskEntities] {
         switch sortOption {
         case .dueDate:
+            
             return taskEntities.sorted { ($0.dueDate ?? Date.distantFuture) < ($1.dueDate ?? Date.distantFuture) }
         case .completion:
             return taskEntities.sorted { $0.isDone && !$1.isDone }
+        case .new:
+            return taskEntities.sorted{($0.createddate ?? Date.distantFuture) < ($1.createddate ?? Date.distantFuture) }
         }
     }
     
     enum SortOption {
         case dueDate
         case completion
+        case new
     }
     
     private func deleteItems(offsets: IndexSet) {
