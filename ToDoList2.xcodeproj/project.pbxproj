@@ -16,6 +16,8 @@
 		889BE7842BD28AE900F5E49A /* ToDoList2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BE7832BD28AE900F5E49A /* ToDoList2UITestsLaunchTests.swift */; };
 		889BE7CA2BD28C9100F5E49A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 889BE7C82BD28C9100F5E49A /* DataModel.xcdatamodeld */; };
 		889BE7CC2BD28DB800F5E49A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BE7CB2BD28DB800F5E49A /* DataManager.swift */; };
+		889BE7CE2BD290D700F5E49A /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BE7CD2BD290D700F5E49A /* AddTaskView.swift */; };
+		889BE7D02BD2912F00F5E49A /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BE7CF2BD2912F00F5E49A /* EditTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		889BE7832BD28AE900F5E49A /* ToDoList2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		889BE7C92BD28C9100F5E49A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		889BE7CB2BD28DB800F5E49A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		889BE7CD2BD290D700F5E49A /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		889BE7CF2BD2912F00F5E49A /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				889BE76C2BD28AE800F5E49A /* Preview Content */,
 				889BE7C82BD28C9100F5E49A /* DataModel.xcdatamodeld */,
 				889BE7CB2BD28DB800F5E49A /* DataManager.swift */,
+				889BE7CD2BD290D700F5E49A /* AddTaskView.swift */,
+				889BE7CF2BD2912F00F5E49A /* EditTaskView.swift */,
 			);
 			path = ToDoList2;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				889BE7CA2BD28C9100F5E49A /* DataModel.xcdatamodeld in Sources */,
+				889BE7CE2BD290D700F5E49A /* AddTaskView.swift in Sources */,
 				889BE7CC2BD28DB800F5E49A /* DataManager.swift in Sources */,
+				889BE7D02BD2912F00F5E49A /* EditTaskView.swift in Sources */,
 				889BE7692BD28AE700F5E49A /* ContentView.swift in Sources */,
 				889BE7672BD28AE700F5E49A /* ToDoList2App.swift in Sources */,
 			);
