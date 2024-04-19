@@ -25,7 +25,7 @@ struct ContentView: View {
     
     
     
-    //    @State private var tasks: [TaskEntities] = []
+    
     @State private var sortOption: SortOption = .dueDate //sort var
     
     var body: some View {
@@ -120,6 +120,23 @@ struct ContentView: View {
             
             
             .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Menu {
+                        Button(action: {
+                            sortOption = .dueDate
+                        }){Label("Sort by Due Date",systemImage:"calendar.circle")
+                            
+                        }
+                        Button(action: {
+                            sortOption = .completion
+                        }){Label("Sort by Completion",systemImage:"checkmark.circle")
+                            
+                        }
+                    } label: {
+                        Label("Sort", systemImage: "line.horizontal.3.circle")
+                    }
+                    
+                }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
