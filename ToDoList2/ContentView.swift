@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ToDoList2
-//
-//  Created by Manal Qaysi on 10/10/1445 AH.
-//
-
 import SwiftUI
 
 struct ContentView: View {
